@@ -14,4 +14,17 @@ public abstract class Transport implements ServiceTransport {
     protected int getWheelsCount() {
         return wheelsCount;
     }
+    public void updateTyre() {
+        for(int i = 1; i <= getWheelsCount(); i++) {
+        System.out.println("Меняем покрышку");
+        }
+    }
+
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
+    }
+
+    public void checkTrailer() {
+        System.out.println("Проверяем прицеп");
+    }
 }
